@@ -39,5 +39,74 @@
     }
     .hero {
       padding: 64px 20px 16px;
-      text-align: center
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 1.5em;
+      font-weight: 500;
+      color: #e0e0e0;
+      line-height: 1.4;
+    }
+    .container {
+      background: transparent;
+      border-radius: 12px;
+      padding: 0;
+      max-width: 380px;
+      margin: 40px auto 64px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    input {
+      background: transparent;
+      border: 1px solid #333;
+      color: #d0d0d0;
+      padding: 12px 14px;
+      font-size: 14px;
+      border-radius: 6px;
+    }
+    input::placeholder {
+      color: #555;
+    }
+    button {
+      background: transparent;
+      color: #aaa;
+      font-weight: 400;
+      padding: 12px;
+      border: 1px solid #333;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    button:hover {
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#structure">Get Started</a>
+  </nav>
+
+  <section class="hero">
+    <h1>We build lead databases on demand</h1>
+  </section>
+
+  <div class="container" id="structure">
+    <form action="https://formspree.io/f/mwkgybvl" method="POST">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <button type="submit">Book a Call</button>
+    </form>
+  </div>
+
+</body>
+</html>
 
