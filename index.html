@@ -15,99 +15,29 @@
     body {
       font-family: 'Inter', sans-serif;
       background: #0f0f0f;
-      color: #eaeaea;
+      color: #d8d8d8;
     }
     nav {
       position: sticky;
       top: 0;
       background: #0f0f0f;
-      padding: 16px 24px;
+      padding: 14px 24px;
       display: flex;
       justify-content: flex-end;
       border-bottom: 1px solid #1a1a1a;
     }
     nav a {
-      color: #eaeaea;
+      color: #d8d8d8;
       text-decoration: none;
-      font-weight: 500;
-      padding: 6px 14px;
-      font-size: 14px;
+      font-weight: 400;
+      font-size: 13px;
+      padding: 6px 12px;
       border-radius: 4px;
-      transition: background 0.3s ease;
     }
     nav a:hover {
-      background: rgba(255, 255, 255, 0.06);
+      background: rgba(255, 255, 255, 0.05);
     }
     .hero {
-      padding: 80px 20px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 1.8em;
-      font-weight: 600;
-      color: #f1f1f1;
-    }
-    .container {
-      background: #1a1a1a;
-      border-radius: 16px;
-      padding: 32px;
-      max-width: 420px;
-      margin: 32px auto;
-      text-align: center;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-top: 16px;
-    }
-    input {
-      background: #121212;
-      border: 1px solid #333;
-      color: #ddd;
-      padding: 12px;
-      font-size: 15px;
-      border-radius: 6px;
-    }
-    input::placeholder {
-      color: #555;
-    }
-    button {
-      background-color: #2e2e2e;
-      color: #eaeaea;
-      font-weight: 500;
-      padding: 12px;
-      border: none;
-      border-radius: 6px;
-      font-size: 15px;
-      margin-top: 8px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-    button:hover {
-      background-color: #3a3a3a;
-    }
-  </style>
-</head>
-<body>
-
-  <nav>
-    <a href="#structure">Get Started</a>
-  </nav>
-
-  <section class="hero">
-    <h1>We build lead databases on demand</h1>
-  </section>
-
-  <div class="container" id="structure">
-    <form action="https://formspree.io/f/mwkgybvl" method="POST">
-      <input type="text" name="name" placeholder="Name" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <input type="tel" name="phone" placeholder="Phone Number" required />
-      <button type="submit">Book a Call</button>
-    </form>
-  </div>
-
-</body>
-</html>
+      padding: 64px 20px 16px;
+      text-align: center
 
