@@ -57,6 +57,9 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease-out forwards;
     }
     .input-group {
       position: relative;
@@ -106,15 +109,12 @@
       letter-spacing: 0.5px;
     }
 
-    /* Animations */
-    .animate {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeUp 0.6s ease-out forwards;
-    }
-
-    @keyframes fadeUp {
-      to {
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
         opacity: 1;
         transform: translateY(0);
       }
@@ -133,22 +133,23 @@
 
   <div class="container" id="structure">
     <form action="https://formspree.io/f/mwkgybvl" method="POST">
-      <div class="input-group animate" style="animation-delay: 0.2s">
+      <div class="input-group">
         <input type="text" name="name" required placeholder=" " />
         <label>Name</label>
       </div>
-      <div class="input-group animate" style="animation-delay: 0.4s">
+      <div class="input-group">
         <input type="email" name="email" required placeholder=" " />
         <label>Email</label>
       </div>
-      <div class="input-group animate" style="animation-delay: 0.6s">
+      <div class="input-group">
         <input type="tel" name="phone" required placeholder=" " />
         <label>Phone Number</label>
       </div>
-      <button class="animate" style="animation-delay: 0.8s" type="submit">Book a Call</button>
+      <button type="submit">Book a Call</button>
     </form>
   </div>
 
 </body>
 </html>
+
 
